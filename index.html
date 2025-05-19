@@ -11,18 +11,103 @@
 <!-- custom css -->
  <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <!-- home section start from here -->
-    <section class="home">
-  
+<body class="poppins-medium">
+    <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- home section start from here -->
+    <section id="sec-1" class="home min-h-screen text-white flex flex-col justify-center items-center">
+    <div class="flex flex-col items-center gap-8">
+        <h1 class="text-[130px] uppercase anton-regular">Alpha clash pro</h1>
+    <p class="mb-5">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+    <button onclick="play()" class="btn bg-white border-none shadow-none">Play Now</button>
+    </div>
     </section>
     <!-- play ground section start from here -->
-    <section class="play-ground">
+    <section id="sec-2" class="play-ground hidden">
+        <div class="flex flex-col items-center gap-15 pt-20">
+  <!-- screen -->
+   <div class="w-3/4 h-80 artboard artboard-horizontal phone-6 border-[15px] rounded-2xl border-[#010313CC]
+   bg-[#FFFFFFB3] ">
+    <div class="flex justify-center ">
+      <p class="bg-[#2F2941] rounded-b-xl px-12 py-3 text-white">Don't look at keyboard while playing...</p>
+    </div> 
+    <div class="flex justify-center items-center h-full">
+      <p id="current-alphabet" class="text-black text-9xl font-bold">Y</p> 
+    </div>
+  </div>
 
+   <!-- keyboard start -->
+    <div>
+        <div class="my-1 flex w-full justify-center gap-1">
+  <kbd id="q" class="kbd">q</kbd>
+  <kbd id="w" class="kbd">w</kbd>
+  <kbd id="e" class="kbd">e</kbd>
+  <kbd id="r" class="kbd">r</kbd>
+  <kbd id="t" class="kbd">t</kbd>
+  <kbd id="y" class="kbd">y</kbd>
+  <kbd id="u" class="kbd">u</kbd>
+  <kbd id="i" class="kbd">i</kbd>
+  <kbd id="o" class="kbd">o</kbd>
+  <kbd id="p" class="kbd">p</kbd>
+</div>
+<div class="my-1 flex w-full justify-center gap-1">
+  <kbd id="a" class="kbd">a</kbd>
+  <kbd id="s" class="kbd">s</kbd>
+  <kbd id="d" class="kbd">d</kbd>
+  <kbd id="f" class="kbd">f</kbd>
+  <kbd id="g" class="kbd">g</kbd>
+  <kbd id="h" class="kbd">h</kbd>
+  <kbd id="j" class="kbd">j</kbd>
+  <kbd id="k" class="kbd">k</kbd>
+  <kbd id="l" class="kbd">l</kbd>
+</div>
+<div class="my-1 flex w-full justify-center gap-1">
+  <kbd id="z" class="kbd">z</kbd>
+  <kbd id="x" class="kbd">x</kbd>
+  <kbd id="c" class="kbd">c</kbd>
+  <kbd id="v" class="kbd">v</kbd>
+  <kbd id="b" class="kbd">b</kbd>
+  <kbd id="n" class="kbd">n</kbd>
+  <kbd id="m" class="kbd">m</kbd>
+  <kbd id="/" class="kbd">/</kbd>
+</div>
+    </div>
+    <!-- keyboard end -->
+
+
+    <!-- life score -->
+     <div class="flex w-1/2 justify-around">
+
+      <button class="btn bg-purple-600 shadow-none border-none text-white rounded-full">
+  Life
+ <img src="/alpha-clash-game/images/Group 23.svg" alt="">
+ <span>1</span>
+</button>
+
+      <button class="btn bg-blue-800 shadow-none border-none bg-black text-white rounded-full">
+      score
+      <img src="/alpha-clash-game/images/monetization_on.svg" alt="">
+      <span>1</span>
+</button>
+
+     </div>
+
+
+   </div>
     </section>
     <!-- score section start from here -->
-    <section class="score">
-
+    <section class="score flex justify-center items-center min-h-screen hidden">
+        <div class="text-white text-center space-y-4 bg-[#FFFFFF33] p-7 rounded-lg">
+          <h1 class="text-7xl">
+            <span class="font-extrabold">Score :</span>
+            <span>14</span>
+          </h1>
+          <button class="btn border-none shadow-none">Play Now</button>
+          <p>Practice will make you Pro</p>
+        </div>
     </section>
+    </main>
+    
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alpha-clash.js"></script>
 </body>
 </html>
