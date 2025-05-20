@@ -80,13 +80,13 @@
       <button class="btn bg-purple-600 shadow-none border-none text-white rounded-full">
   Life
  <img src="/alpha-clash-game/images/Group 23.svg" alt="">
- <span>1</span>
+ <span id="current-life">5</span>
 </button>
 
       <button class="btn bg-blue-800 shadow-none border-none bg-black text-white rounded-full">
       score
       <img src="/alpha-clash-game/images/monetization_on.svg" alt="">
-      <span>1</span>
+      <span id="current-score">0</span>
 </button>
 
      </div>
@@ -95,13 +95,14 @@
    </div>
     </section>
     <!-- score section start from here -->
-    <section class="score flex justify-center items-center min-h-screen hidden">
+    <section id="sec-3" class="score flex justify-center items-center min-h-screen hidden">
         <div class="text-white text-center space-y-4 bg-[#FFFFFF33] p-7 rounded-lg">
+          <h4 class="text-3xl">Game over!</h4>
           <h1 class="text-7xl">
             <span class="font-extrabold">Score :</span>
-            <span>14</span>
+            <span id="final-score">14</span>
           </h1>
-          <button class="btn border-none shadow-none">Play Now</button>
+          <button onclick="play()" class="btn border-none shadow-none">Play Now</button>
           <p>Practice will make you Pro</p>
         </div>
     </section>

@@ -14,6 +14,32 @@ function addBackgroundColor(elementId){
     element.classList.add('bg-orange-500');
 
 }
+
+function removeBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-500');
+}
+
+
+function getTextById(elementId){
+ const element = document.getElementById(elementId);
+ const text = element.innerText;
+ return text;
+}
+
+// score and life function
+function getElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValue = element.innerText;
+    const value = parseInt(elementValue);
+    return value;
+}
+
+function setElementValueById(elementId, value){
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+
 // get random number section is here--
 
 function getRandomAlphabet(){
